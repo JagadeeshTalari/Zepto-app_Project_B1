@@ -1,0 +1,15 @@
+.overall-wrapper {
+  width: 85vw;
+  margin: auto;
+}
+
+.homePageBanners {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.smallBanners {
+  gap: 2rem;
+  overflow: hidden;
+}

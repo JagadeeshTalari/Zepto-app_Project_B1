@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 function ExploreByCategories({ exploreByCategories }) {
   return (
     <div>
-      <Link to="/fruits&veg">
+      {/* <Link to="/fruits&veg">
         <img src={exploreByCategories[0].imagePath} alt="" />
-      </Link>
+      </Link> */}
 
       <h3>Explore By Categories</h3>
 

@@ -6,6 +6,9 @@ import ExploreByNewCategories from "./Components/ExploreByNewCategories";
 import Navbar from "./Components/Navbar/Navbar";
 import FruitsAndVeg from "./Components/FruitsAndVeg";
 import Home from "./Pages/Home";
+import LoginMessage from "./Components/LoginMessage";
+import PaanCornerPage from "./Pages/PaanCornerPage";
+import AttaOilRice from "./Components/AttaOilRice";
 
 const exploreNewCategories = [
   {
@@ -86,10 +89,13 @@ function App() {
 
       <BrowserRouter>
         <Navbar />
-        {/* <Routes>
+        <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/fruits&veg" element={<FruitsAndVeg />}></Route>
-        </Routes> */}
+          <Route path="/paanCorner" element={<PaanCornerPage />} />
+          <Route path="/loginMessage" element={<LoginMessage />}></Route>
+          <Route path="/firstRoute" element={<FruitsAndVeg />}></Route>
+          <Route path="/attaRiceOilDals" element={<AttaOilRice />}></Route>
+        </Routes>
       </BrowserRouter>
       {/* ------------------------------------------------------ */}
       {/*                  Explore By Categories                 */}

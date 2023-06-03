@@ -1,5 +1,8 @@
 import React from "react";
+import "./Home.css";
 import ExploreByCategories from "../Components/ExploreByCategories";
+import { Link } from "react-router-dom";
+import CommonItemsLayout from "../Components/CommonItemsLayout/CommonItemsLayout";
 
 const exploreByCategories = [
   {
@@ -16,6 +19,7 @@ const exploreByCategories = [
   },
   {
     id: "3",
+    routePath: "/masalaDryFruits",
     imagePath:
       "https://cdn.zeptonow.com/production///tr:w-210,ar-312-408,pr-true,f-webp,q-80/inventory/category/dfbc7b23-ddd8-4c20-8b0c-4e8e3d5d2612-imageWithName",
   },
@@ -119,8 +123,46 @@ const exploreByCategories = [
 
 function Home() {
   return (
-    <div>
+    <div className="overall-wrapper">
+      {/* <CommonItemsLayout /> */}
       <h1>Home Page</h1>
+
+      {/* ------------------------------------------------------ */}
+      {/*                  Home Page Banners                     */}
+      {/* ------------------------------------------------------ */}
+
+      <div className="homePageBanners">
+        <Link to="/paanCorner">
+          <img
+            src="https://cdn.zeptonow.com/mweb-prod/tr:w-1280,ar-1438-235,pr-true,f-webp,q-80//images/paan-corner/paan-corner-banner-desktop.png"
+            alt=""
+          />
+        </Link>
+
+        {/* small banner */}
+        <div className="smallBanners d-flex ">
+          <img
+            width={475}
+            src="https://cdn.zeptonow.com/production///tr:w-969,ar-969-501,pr-true,f-webp,q-80/inventory/banner/b881ec4d-66b2-409d-a08e-8565b2626784-Banner-carousel.png"
+            alt=""
+          />
+          <img
+            width={475}
+            src="https://cdn.zeptonow.com/production///tr:w-969,ar-969-501,pr-true,f-webp,q-80/inventory/banner/813f0428-07c5-4c3d-b90f-731f968fc7d2-Banner-Carousel-Final_May-Phase.png"
+            alt=""
+          />
+          <img
+            width={475}
+            src="https://cdn.zeptonow.com/production///tr:w-969,ar-969-501,pr-true,f-webp,q-80/inventory/banner/0bad21ef-ef07-47ec-803f-434d138bb9ee-BANNER_CAROUSEL_Centrum.png"
+            alt=""
+          />
+        </div>
+
+        <img
+          src="https://cdn.zeptonow.com/production///tr:w-981,ar-981-342,pr-true,f-webp,q-80/inventory/banner/620cec69-1b68-4edd-8f99-2197c8929ed1-Premium-Promo_Zepto-Caf.png"
+          alt=""
+        />
+      </div>
 
       {/* ------------------------------------------------------ */}
       {/*                  Explore By Categories                 */}
